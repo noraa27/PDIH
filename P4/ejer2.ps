@@ -1,0 +1,56 @@
+%!PS
+newpath
+% Start a new path
+100 400 moveto
+400
+0 rlineto
+0
+250 rlineto
+-400 0 rlineto
+closepath
+0.9 setgray
+fill
+stroke
+% finish the path (paint the lines)
+newpath
+% x y R angI angF
+200 530 45 0 360 arc % dibujar un círculo gris
+0.7 setgray % poner el color a gris claro
+fill % rellenamos la figura recién terminada
+0 setgray
+1 setlinewidth
+200 530 45 0 360 arc % dibujar una circunferencia negra
+stroke % no se pinta nada hasta esta instrucción
+/Times-Roman findfont
+15 scalefont
+setfont
+newpath
+370 530 moveto
+(Drago Kovacevic) show
+stroke
+0.6 setgray %cambiar a color gris claro menos acentuado, es decir, más oscuro
+newpath
+350 510 moveto
+(Ejecutivo de Cuentas) show
+stroke
+newpath
+330 480 moveto
+(Po de la Castellana, 141) show
+stroke
+newpath
+310 465 moveto
+(Local 2 - Edificio Cuzco IV) show
+stroke
+newpath
+390 450 moveto
+(28046 Madrid) show
+stroke
+newpath
+290 435 moveto
+(Tels. 914 174 550/669 896 224) show
+stroke
+newpath
+370 420 moveto
+(drago@serotel.es) show
+stroke
+showpage % mostrar la página

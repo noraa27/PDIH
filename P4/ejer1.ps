@@ -1,0 +1,129 @@
+%!
+/outputtext {
+/data exch def
+/rot exch def
+/xfont exch def
+/Times-Roman findfont
+xfont scalefont
+setfont
+/y1 exch def
+/x1 exch def
+x1 y1 moveto
+rot rotate
+data show
+rot neg rotate %sirve para ángulos negativos
+} def %definición de una función para rotar texto
+% x y fontsize rotation (text) outputtext
+20 420 12 90 (mi casita) outputtext
+% Rectángulo del fondo de la casa
+newpath
+% Start a new path
+35 400 moveto
+120
+0 rlineto
+0
+90 rlineto
+-120 0 rlineto
+closepath
+0.7 setgray
+fill
+35 400 moveto
+120
+0 rlineto
+0
+90 rlineto
+-120 0 rlineto
+closepath
+0 0.5 1 setrgbcolor
+0.5 setlinewidth
+stroke
+% finish the path (paint the lines)
+%Fin rectángulo del fondo de la casa
+% Ventana izquierda
+newpath
+% Start a new path
+55 450 moveto
+20
+0 rlineto
+0
+15 rlineto
+-20 0 rlineto
+closepath
+0.7 setgray
+fill
+55 450 moveto
+20
+0 rlineto
+0
+15 rlineto
+-20 0 rlineto
+closepath
+0 0.5 1 setrgbcolor
+0.5 setlinewidth
+stroke
+% finish the path (paint the lines)
+% Ventana derecha
+newpath
+% Start a new path
+115 450 moveto
+20
+0 rlineto
+0
+15 rlineto
+-20 0 rlineto
+closepath
+0.7 setgray
+fill
+115 450 moveto
+20
+0 rlineto
+0
+15 rlineto
+-20 0 rlineto
+closepath
+0 0.5 1 setrgbcolor
+0.5 setlinewidth
+stroke
+% finish the path (paint the lines)
+% Puerta
+newpath
+% Start a new path
+85 400 moveto
+20
+0 rlineto
+0
+30 rlineto
+-20 0 rlineto
+closepath
+0.7 setgray
+fill
+85 400 moveto
+20
+0 rlineto
+0
+30 rlineto
+-20 0 rlineto
+closepath
+0 0.5 1 setrgbcolor
+0.5 setlinewidth
+stroke
+% finish the path (paint the lines)
+% Tejado
+newpath
+% Start a new path
+%relleno
+20 490 moveto
+75 54 rlineto
+75 -54 rlineto
+0.7 setgray
+fill
+%marco
+20 490 moveto
+75 54 rlineto
+75 -54 rlineto
+0 0.5 1 setrgbcolor
+0.5 setlinewidth
+stroke
+% finish the path (paint the lines)
+showpage
+% We're done
